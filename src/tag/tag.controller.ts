@@ -1,12 +1,11 @@
-import { Controller, Get } from '@nestjs/common';
-import { TagService } from './tag.service';
+import { Controller, Get } from "@nestjs/common";
+
+
 
 @Controller('tags')
-export class TagController {
-  constructor(private readonly tagService: TagService) {}
-
+export class TagController{
   @Get()
-  getAll() {
-    return this.tagService.getAll();
+  getAll(){
+    return ['ai', 'typescript','javascript']
   }
 }
