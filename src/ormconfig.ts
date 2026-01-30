@@ -9,7 +9,7 @@ const config: PostgresConnectionOptions = {
         password: '1234',
         database: 'blog',
         entities: [__dirname + '/**/*.entity.{.ts, .js}'],
-        synchronize: true
+        synchronize: true // dontuse in production RC1491457
 }
 
 
