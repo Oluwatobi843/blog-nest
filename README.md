@@ -1,70 +1,121 @@
 # Blog Nest
 
-> A NestJS backend project demonstrating modular server-side application architecture with TypeScript.
+> A NestJS backend project demonstrating modular server-side architecture with TypeScript, dependency injection and automated testing.
 
 ## Overview
 
-Blog Nest is a backend learning and development project built with NestJS. The repository is based on the standard NestJS application structure and is intended to demonstrate controllers, services, modules, validation and testable server-side architecture.
+Blog Nest is a NestJS-based backend project created around the framework's modular application architecture. It demonstrates how HTTP controllers, services, modules and validation can be organized into maintainable server-side components.
 
-## Technology Stack
+The repository is also useful as a progression project from traditional Node.js/Express development toward structured NestJS backend engineering.
 
-- NestJS
-- TypeScript
-- Node.js
-- Jest
-- Supertest
-- ESLint
-- Prettier
+## Technology stack
+
+| Area | Technology |
+|---|---|
+| Framework | NestJS |
+| Language | TypeScript |
+| Runtime | Node.js |
+| Unit testing | Jest |
+| E2E testing | Supertest |
+| Code quality | ESLint / Prettier |
 
 ## Architecture
 
 ```text
 HTTP Request
-    |
-    v
+     |
+     v
 Controller
-    |
-    v
+     |
+     v
 Service / Business Logic
-    |
-    v
-Data / Domain Layer
-    |
-    v
+     |
+     v
+Domain / Data Layer
+     |
+     v
 HTTP Response
 ```
 
-NestJS modules keep related functionality isolated and make the application easier to extend and test.
+NestJS modules keep related functionality isolated while dependency injection makes services easier to compose and test.
+
+## Project concepts
+
+The project demonstrates:
+
+- NestJS modules
+- Controllers and route handlers
+- Injectable services
+- Dependency injection
+- DTO-oriented request handling
+- Unit testing
+- End-to-end testing
+- TypeScript backend development
+
+## Installation
+
+```bash
+git clone https://github.com/Oluwatobi843/blog-nest.git
+cd blog-nest
+npm install
+```
 
 ## Development
 
 ```bash
-npm install
 npm run start:dev
+```
+
+Build the application with:
+
+```bash
+npm run build
+```
+
+Run the production build with:
+
+```bash
+npm run start:prod
 ```
 
 ## Testing
 
+### Unit tests
+
 ```bash
 npm run test
+```
+
+### End-to-end tests
+
+```bash
 npm run test:e2e
+```
+
+### Coverage
+
+```bash
 npm run test:cov
 ```
 
-## Engineering Value
+## Engineering value
 
-This repository demonstrates the transition from basic Node/Express development toward **NestJS modular architecture, TypeScript, dependency injection and automated backend testing**.
+Blog Nest demonstrates the transition from basic Express-style API development toward **NestJS modular architecture, TypeScript, dependency injection and testable backend services**.
 
-## Future Improvements
+## Roadmap
 
-- Complete blog domain/API documentation
-- Persistent database integration where required
+Potential future development includes:
+
+- Complete blog-domain/API documentation
+- Persistent database integration
 - Authentication and authorization
 - Swagger/OpenAPI documentation
 - Docker support
 - CI/CD
+- Production logging and observability
 
 ## Author
 
-**Oluwatobi843**  
-https://github.com/Oluwatobi843
+**Oluwatobi843**
+
+GitHub: https://github.com/Oluwatobi843
